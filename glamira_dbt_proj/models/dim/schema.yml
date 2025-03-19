@@ -1,0 +1,69 @@
+version: 2
+
+models:
+  - name: dim_ip_locations
+    description: "Dimension table for IP-based locations"
+    columns:
+      - name: ip
+        description: "Unique identifier for IP addresses"
+        tests:
+          - not_null
+          - unique
+
+      - name: country_short
+        description: "Short country code (e.g., US, DE)"
+        tests:
+          - not_null
+
+  - name: dim_location
+    description: "Dimension table for geographic locations"
+    columns:
+      - name: country_short
+        description: "Short country code"
+        tests:
+          - not_null
+
+      - name: country_long
+        description: "Full country name"
+        tests:
+          - not_null
+
+      - name: city
+        description: "City name"
+        tests:
+          - not_null
+
+  - name: dim_product
+    description: "Product dimension table"
+    columns:
+      - name: product_id
+        description: "Primary key for products"
+        tests:
+          - not_null
+          - unique
+
+      - name: alloy
+        description: "Type of alloy used in the product"
+        tests:
+          - not_null
+
+      - name: price
+        description: "Product price"
+        tests:
+          - not_null
+          - dbt_expectations.expect_column_values_to_be_between:
+              min_value: 0
+
+  - name: dim_time
+    description: "Time dimension table"
+    columns:
+      - name: timestamp
+        description: "Primary key for time dimension"
+        tests:
+          - not_null
+          - unique
+
+      - name: local_time
+        description: "Formatted local time"
+        tests:
+          - not_null

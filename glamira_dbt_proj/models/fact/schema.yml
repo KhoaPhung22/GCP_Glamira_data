@@ -1,0 +1,35 @@
+version: 2
+
+models:
+  - name: fact_revenue
+    description: "Fact table for revenue analysis, containing order-level revenue details."
+    columns:
+      - name: order_id
+        description: "Unique identifier for each order"
+        tests:
+          - not_null  # Ensures every order has an ID
+          - unique    # Ensures no duplicate order IDs
+
+      - name: product_id
+        description: "ID of the purchased product"
+        tests:
+          - not_null  # Product ID should not be null
+          - relationships:
+              to: ref('dim_product')
+              field: product_id  # Ensures product exists in dim_product
+
+      - name: price
+        description: "Product price from dim_product"
+        tests:
+          - not_null  # Price should not be null
+          - positive_value  # Custom test: ensures price is positive
+
+      - name: total_revenue
+        description: "Total revenue per order (price * amount)"
+        tests:
+          - positive_value  # Ensures revenue is positive
+
+      - name: country_long
+        description: "Full country name from dim_location"
+        tests:
+          - not_null  # Country should not be null

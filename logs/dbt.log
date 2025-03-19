@@ -1,0 +1,353 @@
+[0m18:09:08.182282 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002338CD85690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002338CD86810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002338CD8A550>]}
+
+
+============================== 18:09:08.197348 | 5047fd3d-b626-4c58-8770-6e126458622f ==============================
+[0m18:09:08.197348 [info ] [MainThread]: Running with dbt=1.9.3
+[0m18:09:08.198348 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Administrator\\.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt init', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m18:09:22.809374 [debug] [MainThread]: Starter project path: C:\GCP_Glamira_data\dbt_venv\Lib\site-packages\dbt\include\starter_project
+[0m18:09:22.869480 [info ] [MainThread]: 
+Your new dbt project "glamira_dbt_proj" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m18:09:22.870480 [info ] [MainThread]: Setting up your profile.
+[0m18:25:00.063167 [info ] [MainThread]: Profile glamira_dbt_proj written to C:\Users\Administrator\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m18:25:00.065151 [debug] [MainThread]: Command `dbt init` succeeded at 18:25:00.064141 after 951.94 seconds
+[0m18:25:00.065151 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002338CD89E90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023387861F50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000233A5DE3890>]}
+[0m18:25:00.066140 [debug] [MainThread]: Flushing usage events
+[0m18:25:01.576099 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:37:47.378555 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AD0CCB3CD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AD0C8A3A10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AD0CC85F10>]}
+
+
+============================== 18:37:47.384087 | 29cb7744-a5aa-451f-b743-53894d728f76 ==============================
+[0m18:37:47.384087 [info ] [MainThread]: Running with dbt=1.9.3
+[0m18:37:47.385077 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'profiles_dir': 'C:\\Users\\Administrator\\.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt debug', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m18:37:47.415166 [info ] [MainThread]: dbt version: 1.9.3
+[0m18:37:47.416153 [info ] [MainThread]: python version: 3.11.9
+[0m18:37:47.416153 [info ] [MainThread]: python path: C:\GCP_Glamira_data\dbt_venv\Scripts\python.exe
+[0m18:37:47.417227 [info ] [MainThread]: os info: Windows-10-10.0.22631-SP0
+[0m18:37:48.156968 [info ] [MainThread]: Using profiles dir at C:\Users\Administrator\.dbt
+[0m18:37:48.157968 [info ] [MainThread]: Using profiles.yml file at C:\Users\Administrator\.dbt\profiles.yml
+[0m18:37:48.158968 [info ] [MainThread]: Using dbt_project.yml file at C:\GCP_Glamira_data\dbt_project.yml
+[0m18:37:48.158968 [info ] [MainThread]: adapter type: bigquery
+[0m18:37:48.160475 [info ] [MainThread]: adapter version: 1.9.1
+[0m18:37:48.160475 [info ] [MainThread]: Configuration:
+[0m18:37:48.161551 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m18:37:48.162481 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m18:37:48.162481 [info ] [MainThread]: Required dependencies:
+[0m18:37:48.162481 [debug] [MainThread]: Executing "git --help"
+[0m18:37:48.167481 [info ] [MainThread]:  - git [[31mERROR[0m]
+
+[0m18:37:48.168482 [info ] [MainThread]: Connection:
+[0m18:37:48.168482 [info ] [MainThread]:   method: service-account
+[0m18:37:48.169482 [info ] [MainThread]:   database: glamira-project-2
+[0m18:37:48.169482 [info ] [MainThread]:   execution_project: glamira-project-2
+[0m18:37:48.170482 [info ] [MainThread]:   schema: glamira_warehouse
+[0m18:37:48.170482 [info ] [MainThread]:   location: US
+[0m18:37:48.171790 [info ] [MainThread]:   priority: interactive
+[0m18:37:48.171790 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m18:37:48.172794 [info ] [MainThread]:   impersonate_service_account: None
+[0m18:37:48.172794 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m18:37:48.173792 [info ] [MainThread]:   job_retries: 1
+[0m18:37:48.173792 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m18:37:48.174793 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m18:37:48.175794 [info ] [MainThread]:   timeout_seconds: 300
+[0m18:37:48.175794 [info ] [MainThread]:   client_id: None
+[0m18:37:48.176793 [info ] [MainThread]:   token_uri: None
+[0m18:37:48.176793 [info ] [MainThread]:   dataproc_region: None
+[0m18:37:48.177791 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m18:37:48.177791 [info ] [MainThread]:   gcs_bucket: None
+[0m18:37:48.178791 [info ] [MainThread]:   dataproc_batch: None
+[0m18:37:48.178791 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m18:37:48.436449 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m18:37:48.437449 [debug] [MainThread]: On debug: select 1 as id
+[0m18:37:48.437449 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:37:48.438449 [debug] [MainThread]: BigQuery adapter: Got an error when attempting to create a bigquery " "client: '[Errno 2] No such file or directory: 'C:\\Users\\Administrator\\Downloads/glamira-project-2-889621dbeb6c''
+[0m18:37:48.438449 [debug] [MainThread]: BigQuery adapter: Unhandled error while running:
+select 1 as id
+[0m18:37:48.439449 [debug] [MainThread]: BigQuery adapter: Database Error
+  [Errno 2] No such file or directory: 'C:\\Users\\Administrator\\Downloads/glamira-project-2-889621dbeb6c'
+[0m18:37:48.439449 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m18:37:48.440451 [info ] [MainThread]: [31m3 checks failed:[0m
+[0m18:37:48.440451 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\GCP_Glamira_data\dbt_project.yml> not found
+
+[0m18:37:48.441789 [info ] [MainThread]: Error from git --help: Could not find command, ensure it is in the user's PATH and that the user has permissions to run it: "git"
+
+[0m18:37:48.442785 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >'NoneType' object has no attribute 'close'
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m18:37:48.443799 [debug] [MainThread]: Command `dbt debug` failed at 18:37:48.443799 after 1.16 seconds
+[0m18:37:48.443799 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AD0CCEB790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AD0CC89D10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AD0CCB3CD0>]}
+[0m18:37:48.444793 [debug] [MainThread]: Flushing usage events
+[0m18:37:49.953674 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:39:46.450471 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018244B93950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018244A98110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018244BDD4D0>]}
+
+
+============================== 18:39:46.455991 | 58a45f3f-6787-4fa2-8b50-88ce6f3301f1 ==============================
+[0m18:39:46.455991 [info ] [MainThread]: Running with dbt=1.9.3
+[0m18:39:46.457009 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'debug': 'False', 'profiles_dir': 'C:\\Users\\Administrator\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m18:39:46.467680 [info ] [MainThread]: dbt version: 1.9.3
+[0m18:39:46.468687 [info ] [MainThread]: python version: 3.11.9
+[0m18:39:46.468687 [info ] [MainThread]: python path: C:\GCP_Glamira_data\dbt_venv\Scripts\python.exe
+[0m18:39:46.470193 [info ] [MainThread]: os info: Windows-10-10.0.22631-SP0
+[0m18:39:47.171462 [info ] [MainThread]: Using profiles dir at C:\Users\Administrator\.dbt
+[0m18:39:47.172466 [info ] [MainThread]: Using profiles.yml file at C:\Users\Administrator\.dbt\profiles.yml
+[0m18:39:47.173451 [info ] [MainThread]: Using dbt_project.yml file at C:\GCP_Glamira_data\dbt_project.yml
+[0m18:39:47.173451 [info ] [MainThread]: adapter type: bigquery
+[0m18:39:47.174385 [info ] [MainThread]: adapter version: 1.9.1
+[0m18:39:47.174385 [info ] [MainThread]: Configuration:
+[0m18:39:47.175398 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m18:39:47.175398 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m18:39:47.176059 [info ] [MainThread]: Required dependencies:
+[0m18:39:47.176059 [debug] [MainThread]: Executing "git --help"
+[0m18:39:47.180064 [info ] [MainThread]:  - git [[31mERROR[0m]
+
+[0m18:39:47.180064 [info ] [MainThread]: Connection:
+[0m18:39:47.180064 [info ] [MainThread]:   method: service-account
+[0m18:39:47.181371 [info ] [MainThread]:   database: glamira-project-2
+[0m18:39:47.181371 [info ] [MainThread]:   execution_project: glamira-project-2
+[0m18:39:47.181371 [info ] [MainThread]:   schema: glamira_warehouse
+[0m18:39:47.182377 [info ] [MainThread]:   location: US
+[0m18:39:47.182377 [info ] [MainThread]:   priority: interactive
+[0m18:39:47.182377 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m18:39:47.183375 [info ] [MainThread]:   impersonate_service_account: None
+[0m18:39:47.184377 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m18:39:47.184377 [info ] [MainThread]:   job_retries: 1
+[0m18:39:47.184377 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m18:39:47.185376 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m18:39:47.185376 [info ] [MainThread]:   timeout_seconds: 300
+[0m18:39:47.186377 [info ] [MainThread]:   client_id: None
+[0m18:39:47.186377 [info ] [MainThread]:   token_uri: None
+[0m18:39:47.186377 [info ] [MainThread]:   dataproc_region: None
+[0m18:39:47.187376 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m18:39:47.187376 [info ] [MainThread]:   gcs_bucket: None
+[0m18:39:47.188376 [info ] [MainThread]:   dataproc_batch: None
+[0m18:39:47.189379 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m18:39:47.453053 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m18:39:47.453053 [debug] [MainThread]: On debug: select 1 as id
+[0m18:39:47.453978 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:39:47.453978 [debug] [MainThread]: BigQuery adapter: Got an error when attempting to create a bigquery " "client: '[Errno 2] No such file or directory: 'C:\\Users\\Administrator\\Downloads/glamira-project-2-889621dbeb6c''
+[0m18:39:47.453978 [debug] [MainThread]: BigQuery adapter: Unhandled error while running:
+select 1 as id
+[0m18:39:47.454980 [debug] [MainThread]: BigQuery adapter: Database Error
+  [Errno 2] No such file or directory: 'C:\\Users\\Administrator\\Downloads/glamira-project-2-889621dbeb6c'
+[0m18:39:47.454980 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m18:39:47.455984 [info ] [MainThread]: [31m3 checks failed:[0m
+[0m18:39:47.456978 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\GCP_Glamira_data\dbt_project.yml> not found
+
+[0m18:39:47.457977 [info ] [MainThread]: Error from git --help: Could not find command, ensure it is in the user's PATH and that the user has permissions to run it: "git"
+
+[0m18:39:47.457977 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >'NoneType' object has no attribute 'close'
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m18:39:47.458975 [debug] [MainThread]: Command `dbt debug` failed at 18:39:47.458975 after 1.08 seconds
+[0m18:39:47.458975 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018243AC0B50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001823FA92D50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001825DCEE510>]}
+[0m18:39:47.460480 [debug] [MainThread]: Flushing usage events
+[0m18:39:48.952727 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:07:32.818307 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017352EDD2D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017352EDE3D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017352EE9650>]}
+
+
+============================== 19:07:32.833192 | 7e489766-7da5-4fe2-aca7-903975cc7b2d ==============================
+[0m19:07:32.833192 [info ] [MainThread]: Running with dbt=1.9.3
+[0m19:07:32.834476 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Administrator\\.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m19:07:32.860282 [info ] [MainThread]: dbt version: 1.9.3
+[0m19:07:32.862287 [info ] [MainThread]: python version: 3.11.9
+[0m19:07:32.862287 [info ] [MainThread]: python path: C:\GCP_Glamira_data\dbt_venv\Scripts\python.exe
+[0m19:07:32.863283 [info ] [MainThread]: os info: Windows-10-10.0.22631-SP0
+[0m19:07:33.522196 [info ] [MainThread]: Using profiles dir at C:\Users\Administrator\.dbt
+[0m19:07:33.523410 [info ] [MainThread]: Using profiles.yml file at C:\Users\Administrator\.dbt\profiles.yml
+[0m19:07:33.524418 [info ] [MainThread]: Using dbt_project.yml file at C:\GCP_Glamira_data\dbt_project.yml
+[0m19:07:33.524746 [info ] [MainThread]: adapter type: bigquery
+[0m19:07:33.525313 [info ] [MainThread]: adapter version: 1.9.1
+[0m19:07:33.525824 [info ] [MainThread]: Configuration:
+[0m19:07:33.525824 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m19:07:33.527174 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m19:07:33.527174 [info ] [MainThread]: Required dependencies:
+[0m19:07:33.528181 [debug] [MainThread]: Executing "git --help"
+[0m19:07:33.554725 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m19:07:33.555737 [debug] [MainThread]: STDERR: "b''"
+[0m19:07:33.555737 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m19:07:33.556728 [info ] [MainThread]: Connection:
+[0m19:07:33.557260 [info ] [MainThread]:   method: service-account
+[0m19:07:33.557826 [info ] [MainThread]:   database: glamira-project-2
+[0m19:07:33.558241 [info ] [MainThread]:   execution_project: glamira-project-2
+[0m19:07:33.558241 [info ] [MainThread]:   schema: glamira_warehouse
+[0m19:07:33.559245 [info ] [MainThread]:   location: US
+[0m19:07:33.559245 [info ] [MainThread]:   priority: interactive
+[0m19:07:33.559245 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m19:07:33.560245 [info ] [MainThread]:   impersonate_service_account: None
+[0m19:07:33.560245 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m19:07:33.561247 [info ] [MainThread]:   job_retries: 1
+[0m19:07:33.561247 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m19:07:33.562247 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m19:07:33.562247 [info ] [MainThread]:   timeout_seconds: 300
+[0m19:07:33.563248 [info ] [MainThread]:   client_id: None
+[0m19:07:33.563248 [info ] [MainThread]:   token_uri: None
+[0m19:07:33.564246 [info ] [MainThread]:   dataproc_region: None
+[0m19:07:33.564246 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m19:07:33.564246 [info ] [MainThread]:   gcs_bucket: None
+[0m19:07:33.565247 [info ] [MainThread]:   dataproc_batch: None
+[0m19:07:33.565247 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m19:07:33.881738 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m19:07:33.882736 [debug] [MainThread]: On debug: select 1 as id
+[0m19:07:33.882736 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m19:07:35.576947 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=glamira-project-2&j=bq:US:25b881fa-77dc-4f46-afd3-abe53bd224d5&page=queryresults
+[0m19:07:38.629105 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m19:07:38.632100 [info ] [MainThread]: [31m1 check failed:[0m
+[0m19:07:38.634445 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\GCP_Glamira_data\dbt_project.yml> not found
+
+[0m19:07:38.636816 [debug] [MainThread]: Command `dbt debug` failed at 19:07:38.635819 after 5.89 seconds
+[0m19:07:38.636816 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m19:07:38.636816 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017352E8DE50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001736A19E3D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001734DA12150>]}
+[0m19:07:38.637746 [debug] [MainThread]: Flushing usage events
+[0m19:07:39.781171 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:35:50.508999 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002440D185810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002440CED1090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002440CFD7D10>]}
+
+
+============================== 20:35:50.513999 | 36835a7a-6e5a-48de-bcb5-dd079ad845df ==============================
+[0m20:35:50.513999 [info ] [MainThread]: Running with dbt=1.9.3
+[0m20:35:50.514999 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Administrator\\.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m20:35:50.527608 [info ] [MainThread]: dbt version: 1.9.3
+[0m20:35:50.528609 [info ] [MainThread]: python version: 3.11.9
+[0m20:35:50.529607 [info ] [MainThread]: python path: C:\GCP_Glamira_data\dbt_venv\Scripts\python.exe
+[0m20:35:50.530175 [info ] [MainThread]: os info: Windows-10-10.0.22631-SP0
+[0m20:35:51.188150 [info ] [MainThread]: Using profiles dir at C:\Users\Administrator\.dbt
+[0m20:35:51.189477 [info ] [MainThread]: Using profiles.yml file at C:\Users\Administrator\.dbt\profiles.yml
+[0m20:35:51.190493 [info ] [MainThread]: Using dbt_project.yml file at C:\GCP_Glamira_data\dbt_project.yml
+[0m20:35:51.190493 [info ] [MainThread]: adapter type: bigquery
+[0m20:35:51.191570 [info ] [MainThread]: adapter version: 1.9.1
+[0m20:35:51.192492 [info ] [MainThread]: Configuration:
+[0m20:35:51.192492 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m20:35:51.193491 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m20:35:51.193491 [info ] [MainThread]: Required dependencies:
+[0m20:35:51.194492 [debug] [MainThread]: Executing "git --help"
+[0m20:35:51.222096 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m20:35:51.222096 [debug] [MainThread]: STDERR: "b''"
+[0m20:35:51.223103 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m20:35:51.223103 [info ] [MainThread]: Connection:
+[0m20:35:51.224094 [info ] [MainThread]:   method: service-account
+[0m20:35:51.224094 [info ] [MainThread]:   database: glamira-project-2
+[0m20:35:51.225100 [info ] [MainThread]:   execution_project: glamira-project-2
+[0m20:35:51.225100 [info ] [MainThread]:   schema: glamira_warehouse
+[0m20:35:51.226095 [info ] [MainThread]:   location: US
+[0m20:35:51.226095 [info ] [MainThread]:   priority: interactive
+[0m20:35:51.227108 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m20:35:51.227108 [info ] [MainThread]:   impersonate_service_account: None
+[0m20:35:51.228097 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m20:35:51.229100 [info ] [MainThread]:   job_retries: 1
+[0m20:35:51.229100 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m20:35:51.230098 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m20:35:51.230098 [info ] [MainThread]:   timeout_seconds: 300
+[0m20:35:51.231099 [info ] [MainThread]:   client_id: None
+[0m20:35:51.231099 [info ] [MainThread]:   token_uri: None
+[0m20:35:51.232100 [info ] [MainThread]:   dataproc_region: None
+[0m20:35:51.232100 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m20:35:51.232100 [info ] [MainThread]:   gcs_bucket: None
+[0m20:35:51.233099 [info ] [MainThread]:   dataproc_batch: None
+[0m20:35:51.233099 [info ] [MainThread]: Registered adapter: bigquery=1.9.1
+[0m20:35:51.478912 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m20:35:51.478912 [debug] [MainThread]: On debug: select 1 as id
+[0m20:35:51.479927 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m20:35:52.374890 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=glamira-project-2&j=bq:US:a1faa81f-b9e3-4f67-8cc0-58f7a231f8b4&page=queryresults
+[0m20:35:53.164986 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m20:35:53.167978 [info ] [MainThread]: [31m1 check failed:[0m
+[0m20:35:53.168972 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\GCP_Glamira_data\dbt_project.yml> not found
+
+[0m20:35:53.169972 [debug] [MainThread]: Command `dbt debug` failed at 20:35:53.169972 after 2.73 seconds
+[0m20:35:53.169972 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m20:35:53.170981 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002440CFAC110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002440D18A090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002440D1E2D10>]}
+[0m20:35:53.170981 [debug] [MainThread]: Flushing usage events
+[0m20:35:54.353400 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:35:43.910269 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EE230E2210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EE230E1710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EE230E2A90>]}
+
+
+============================== 14:35:43.925465 | 5e068259-98c4-49ba-a260-201a17fb725a ==============================
+[0m14:35:43.925465 [info ] [MainThread]: Running with dbt=1.9.3
+[0m14:35:43.926599 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Administrator\\.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt run --select stg_back_to_product_action.sql', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m14:35:43.927599 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\GCP_Glamira_data\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m14:35:43.928598 [debug] [MainThread]: Command `dbt run` failed at 14:35:43.928598 after 0.08 seconds
+[0m14:35:43.928598 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EE2308DC90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EE22CB0250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EE23087A10>]}
+[0m14:35:43.929599 [debug] [MainThread]: Flushing usage events
+[0m14:35:47.078351 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:36:47.348457 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AA121EB010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AA121E9D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AA121E9B10>]}
+
+
+============================== 14:36:47.353977 | c5293756-c0db-43fc-bf1d-b9cc859ac39e ==============================
+[0m14:36:47.353977 [info ] [MainThread]: Running with dbt=1.9.3
+[0m14:36:47.354394 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\Administrator\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt run --select stg_checkout_success.sql', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m14:36:47.355426 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\GCP_Glamira_data\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m14:36:47.356409 [debug] [MainThread]: Command `dbt run` failed at 14:36:47.356409 after 0.07 seconds
+[0m14:36:47.356409 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AA1218AD50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AA12189DD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AA12185F90>]}
+[0m14:36:47.357409 [debug] [MainThread]: Flushing usage events
+[0m14:36:48.706579 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:37:02.108436 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002FC10BC50D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002FC10BE2F90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002FC10BE89D0>]}
+
+
+============================== 14:37:02.113723 | 7943d2dc-cf9c-47eb-adde-a7c6f2c2f29a ==============================
+[0m14:37:02.113723 [info ] [MainThread]: Running with dbt=1.9.3
+[0m14:37:02.114638 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'debug': 'False', 'profiles_dir': 'C:\\Users\\Administrator\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt run --select stg_back_to_product_action.sql', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m14:37:02.115637 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\GCP_Glamira_data\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m14:37:02.116641 [debug] [MainThread]: Command `dbt run` failed at 14:37:02.116641 after 0.07 seconds
+[0m14:37:02.117637 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002FC10B89F10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002FC0B6B1090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002FC10B85650>]}
+[0m14:37:02.117637 [debug] [MainThread]: Flushing usage events
+[0m14:37:03.452228 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:37:17.373462 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CC58086310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CC580E26D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CC580E1890>]}
+
+
+============================== 14:37:17.378480 | d7637307-2efe-48d9-b3f7-447fff02a27e ==============================
+[0m14:37:17.378480 [info ] [MainThread]: Running with dbt=1.9.3
+[0m14:37:17.379401 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Administrator\\.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt run --select stg_back_to_product_action.sql', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m14:37:17.380405 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\GCP_Glamira_data\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m14:37:17.381398 [debug] [MainThread]: Command `dbt run` failed at 14:37:17.381398 after 0.07 seconds
+[0m14:37:17.382404 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CC580E2450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CC5808A010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CC58087E50>]}
+[0m14:37:17.382916 [debug] [MainThread]: Flushing usage events
+[0m14:37:18.813376 [debug] [MainThread]: An error was encountered while trying to flush usage events
