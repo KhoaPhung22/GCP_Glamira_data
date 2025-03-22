@@ -1,9 +1,10 @@
-{{ config(
+{# {{ config(
     materialized='table'
 ) }}
 
 WITH time_data AS (
     SELECT 
+        dp.product_id,
         PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', s.local_time) AS timestamp,
         DATE(PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', s.local_time)) AS transaction_date,
         EXTRACT(HOUR FROM PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', s.local_time)) AS transaction_hour,
@@ -22,9 +23,9 @@ WITH time_data AS (
 
     WHERE s.collection = 'checkout_success'  -- Filter for successful checkouts
 
-    GROUP BY transaction_date, transaction_hour, transaction_week, timestamp
+    GROUP BY transaction_date, transaction_hour, transaction_week, timestamp, dp.product_id
     ORDER BY transaction_date
 )
 
-SELECT * FROM time_data;
-WHERE total_revenue IS NOT NULL
+SELECT * FROM time_data
+WHERE total_revenue IS NOT NULL #}

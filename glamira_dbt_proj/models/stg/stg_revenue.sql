@@ -19,7 +19,7 @@ WITH base AS (
     FROM `glamira-project-2.glamira_warehouse.summary2` AS s
     LEFT JOIN UNNEST(s.cart_products) AS c  -- Unnest cart_products array
     LEFT JOIN UNNEST(c.option) AS o         -- Unnest option array inside cart_products
-    LEFT JOIN {{ ref("dim_product") }} AS dp  
+    LEFT JOIN {{ ref("stg_product") }} AS dp  
         ON c.product_id = dp.product_id  -- Joining dim_product for price data
     LEFT JOIN {{ ref("dim_location") }} AS l  
         ON s.ip = l.ip  -- Mapping user location
@@ -38,6 +38,8 @@ SELECT
     city,
     latitude,
     longitude,
+    price,
+    amount,
     SAFE_CAST(price AS FLOAT64) * amount AS total_revenue  -- Calculating revenue
 FROM base
 WHERE SAFE_CAST(price AS FLOAT64) * amount >0

@@ -1,4 +1,4 @@
-{{ config(materialized='view') }}
+{# {{ config(materialized='view') }}
 
 WITH actions AS (
     SELECT 
@@ -17,4 +17,4 @@ SELECT
     country_long,
     city,
     GENERATE_UUID() AS session_id  -- Assigning a unique session ID for each row
-FROM actions
+FROM actions #}

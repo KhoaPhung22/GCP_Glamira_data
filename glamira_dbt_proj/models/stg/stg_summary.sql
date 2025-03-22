@@ -7,6 +7,7 @@ WITH cleaned AS (
         -- General Fields
         TRIM(time_stamp) AS time_stamp,
         TRIM(ip) AS ip,
+        FARM_FINGERPRINT(ip) AS location_id,
         TRIM(user_agent) AS user_agent,
         TRIM(resolution) AS resolution,
         TRIM(user_id_db) AS user_id_db,
@@ -31,7 +32,7 @@ WITH cleaned AS (
         TRIM(viewing_product_id) AS viewing_product_id,
         TRIM(cat_id) AS cat_id,
         TRIM(collect_id) AS collect_id,
-        TRIM(order_id) AS order_id,
+        order_id,
         TRIM(recommendation_product_id) AS recommendation_product_id,
         TRIM(recommendation_clicked_position) AS recommendation_clicked_position,
         TRIM(key_search) AS key_search,
@@ -101,3 +102,4 @@ WITH cleaned AS (
 )
 
 SELECT * FROM cleaned
+

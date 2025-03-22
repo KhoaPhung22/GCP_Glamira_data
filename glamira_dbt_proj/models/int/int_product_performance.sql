@@ -9,7 +9,7 @@ WITH product_data AS (
         SUM(SAFE_CAST(REPLACE(dp.price, ',', '') AS FLOAT64) * dp.amount) AS total_revenue, -- Ignore bad values
         AVG(SAFE_CAST(REPLACE(dp.price, ',', '') AS FLOAT64)) AS avg_price  -- Ignore bad values
 
-    FROM {{ ref('dim_product') }} dp
+    FROM {{ ref('stg_product') }} dp
     WHERE dp.product_id IS NOT NULL
     GROUP BY dp.product_id, dp.option_label  
     ORDER BY total_revenue DESC
